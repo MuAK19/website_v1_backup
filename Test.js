@@ -74,7 +74,7 @@ const data=[
 ];
 
 
-
+//logic for ratings given below
 function getStars(rating) {
 
   // Round to nearest half
@@ -97,20 +97,19 @@ function getStars(rating) {
 
 
 
-
+//Main Program
 document.getElementById("app").innerHTML = `
 <h1 class='app-title'>Shopping website </h1>
 <h6 align='center' >showing results : ${data.length}</h6>
 	${data.map(function(shoes) {
 		return `
 		<div class='shoe'>
-		<img class='shoe-image' src='${shoes.image}'>
-		<div class='triangle-right'><h4 id='txt'>${Math.round(((shoes.price-shoes.specialPrice)/shoes.price)*100)}%  off </h4></div>
-		<br>
-		<h2 class="shoe-name" align='center' style='style='font-size:15px ' ><strong>${shoes.name}</strong></h2>
-		<h2 class="shoe-name" align='center'>${shoes.desc}</h2>
-		<button class='btn' style='style="float: right;"'>    $  ${shoes.specialPrice}   $  <strike>${shoes.price}</strike> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-shopping-bag"></i></button>
-		
+			<img class='shoe-image' src='${shoes.image}'>
+			<div class='triangle-right'><h4 id='txt'>${Math.round(((shoes.price-shoes.specialPrice)/shoes.price)*100)}%  off </h4></div> //code to display discount percentage
+			<br>
+			<h2 class="shoe-name" align='center' style='style='font-size:15px ' ><strong>${shoes.name}</strong></h2>
+			<h2 class="shoe-name" align='center'>${shoes.desc}</h2>
+			<button class='btn' style='style="float: right;"'>    $  ${shoes.specialPrice}   $  <strike>${shoes.price}</strike> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<i class="fa fa-shopping-bag"></i></button>
 			<div class='stars'><b style='font-family='cursive' margin-left:30px; '>Rating:</b> ${getStars(shoes.rating)}</div>
 		</div> 
 		
