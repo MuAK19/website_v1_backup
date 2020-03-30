@@ -62,8 +62,8 @@ font-size:11px;
 
 .triangle-right {
 	height: 20px;
-    width: 50px;
-    background-color: rgb(255, 245, 0);
+        width: 50px;
+        background-color: rgb(255, 245, 0);
 	z-index:1;
 	position:absolute;
 	border-radius: 12px;
@@ -89,14 +89,12 @@ cursor:pointer;
 transform: scale(1.1);
 }
 
-
-
 .shoe-image {
 float: left;
-  width: 40%;
-  margin-right: 15px;
-  
-}
+width: 40%;
+margin-right: 15px;
+  }
+/* not used now . But can be used while formatting */
 .column {
   float: left;
   width: 33.33%;
@@ -118,6 +116,6 @@ float: left;
   
 }
 h1{
-	font-family:cursive; 
-	color:green;
+   font-family:cursive; 
+   color:green;
 }
