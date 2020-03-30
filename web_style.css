@@ -1,0 +1,123 @@
+body {
+  font-family: sans-serif;
+  background-color: #dedede;
+  color: #333;
+  padding: 20px 0 28px 0;
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.app-title {
+  text-align: center;
+  font-weight: normal;
+  font-size: 2.6rem;
+}
+
+.shoe {
+  max-width: 650px;
+  padding: 10px;
+  margin: 13px auto;
+  background-color: #fff;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.btn {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 10px 5px;
+  font-size: 13px;
+  cursor: pointer;
+  width: 170px;
+  margin: 23px auto;
+  margin-left: 100px;
+  align-items: center;
+  border-radius: 12px;
+}
+
+
+.checked {
+  color: orange;
+}
+
+
+
+
+#txt{
+position:absolute;
+top:-10px;
+left:3px;
+z-index:-1;
+font-size:11px;
+}
+
+
+.stars{
+	margin-left:40px;
+}
+
+.triangle-right {
+	height: 20px;
+    width: 50px;
+    background-color: rgb(255, 245, 0);
+	z-index:1;
+	position:absolute;
+	border-radius: 12px;
+}
+
+
+.btn:hover {
+  background-color: RoyalBlue;
+}
+.featured-category{
+margin:50px 0;
+	
+}
+.featured-category img{
+width:100%;
+padding:20px 0;
+transition: 1s;
+cursor:pointer;
+}
+
+
+.featured-category img:hover{
+transform: scale(1.1);
+}
+
+
+
+.shoe-image {
+float: left;
+  width: 40%;
+  margin-right: 15px;
+  
+}
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.shoe-name {
+  font-size: 16px;
+  font-weight: normal;
+  
+  
+}
+h1{
+	font-family:cursive; 
+	color:green;
+}
