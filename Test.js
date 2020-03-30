@@ -105,7 +105,7 @@ document.getElementById("app").innerHTML = `
 		return `
 		<div class='shoe'>
 			<img class='shoe-image' src='${shoes.image}'>
-			<div class='triangle-right'><h4 id='txt'>${Math.round(((shoes.price-shoes.specialPrice)/shoes.price)*100)}%  off </h4></div> //code to display discount percentage
+			<div class='triangle-right'><h4 id='txt'>${Math.round(((shoes.price-shoes.specialPrice)/shoes.price)*100)}%  off </h4></div> 
 			<br>
 			<h2 class="shoe-name" align='center' style='style='font-size:15px ' ><strong>${shoes.name}</strong></h2>
 			<h2 class="shoe-name" align='center'>${shoes.desc}</h2>
